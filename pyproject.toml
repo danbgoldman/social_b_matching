@@ -1,0 +1,40 @@
+[project]
+name = "social_b_matching"
+description = "Optimal b-matching for scored meeting assignments."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [{name = "Dan Goldman", email="danbgoldman@gmail.com"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Scheduling",
+]
+keywords = []
+
+# pip dependencies of the project
+dependencies = [
+    "absl-py",
+    "ortools",
+]
+
+# This is set automatically by flit using `my_project.__version__`
+dynamic = ["version"]
+
+[project.optional-dependencies]
+# Development deps (unittest, linting, formating,...)
+# Installed through `pip install .[dev]`
+dev = [
+]
+
+[tool.pyink]
+# Formatting configuration to follow Google style-guide
+line-length = 80
+preview = true
+pyink-indentation = 2
+pyink-use-majority-quotes = true
+
+[build-system]
+requires = ["flit_core >=3.5,<4"]
+build-backend = "flit_core.buildapi"
