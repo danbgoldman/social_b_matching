@@ -19,7 +19,7 @@ dependencies = [
     "ortools",
 ]
 
-# This is set automatically by flit using `my_project.__version__`
+# This is set automatically by flit using `social_b_matching.__version__`
 dynamic = ["version"]
 
 [project.optional-dependencies]
